@@ -87,6 +87,12 @@ html {
   overflow: hidden;
 }
 
+.linha{
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
 /* Imagem lado a lado 1  */
 .servico{
 display: grid;
