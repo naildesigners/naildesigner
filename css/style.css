@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: linear-gradient(45deg, #eeaeca, #ebdfeb);
+  background-image: linear-gradient(45deg, #ce6c98, #ebdfeb);
   display: flexbox;
   margin: 0;
   padding: 0;
@@ -70,7 +70,7 @@ html {
 
 .foto-perfil { 
   height: 100%;
-  width: 300px;
+  width: 350px;
   max-width: 100%;
   border-radius: 50%;
   padding: 10px;
@@ -87,11 +87,22 @@ html {
   overflow: hidden;
 }
 
+/* Imagem lado a lado 1  */
 .servico{
- width: 100%;
- height: 450px;
- align-items: center;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
 }
+
+/* Imagem lado a lado 2 da class imagem*/
+.imagem{
+  width: 100%;
+  height: 100%;
+  object-fit: auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
 
 .img-container {
   height: 230px;
@@ -107,6 +118,7 @@ html {
   transform: skew(0deg, -13deg);
   height: 250px;
   margin: -35px 0px 0px -70px;
+ 
 }
 
 .inner-skew {
@@ -179,6 +191,7 @@ html {
   align-items: center;
   justify-content: center;
   justify-items: center;
+  
 }
 
 .item-img:hover {
@@ -187,6 +200,7 @@ html {
   transform: scale(2.1);
   align-items: center;
   justify-content: center;
+
 }
 
 .corPrimaria {
@@ -222,8 +236,6 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   color: #47175a;
-  width:30px;
-  height:30px;
 }
 
 .textoBranco {
@@ -232,7 +244,7 @@ p {
 }
 
 .jumbo {
-  background-image: url("../img/fundo.jpg");
+  /*background-image: url("../img/fundo.jpg");*/
   width: 99vw;
   background-size: cover;
 }
