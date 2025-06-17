@@ -90,17 +90,20 @@ html {
 /* Imagem lado a lado 1  */
 .servico{
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(1, 3fr);
 gap: 10px;
 }
 
 /* Imagem lado a lado 2 da class imagem*/
 .imagem{
-  width: 100%;
+  width: 100vh;
+  max-width: 100%;
   height: 100%;
   object-fit: auto;
   padding: 10px;
   border-radius: 15px;
+  align-items: center;
+
 }
 
 
